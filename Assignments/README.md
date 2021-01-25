@@ -3,4 +3,4 @@
 |   #   | Folder Link | Assignment Description |
 | :---: | ----------- | ---------------------- |
 |       |             |                        |
-| 03 | [A03](https://github.com/rugbyprof/3013-Algorithms/tree/master/Assignments/04-A04) |  Commenting C++ Code |
+| 03 | [A03](https://github.com/randymesso/3013-Algorithms/blob/main/Assignments/A03) |  Commenting C++ Code |
