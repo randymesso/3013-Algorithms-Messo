@@ -90,7 +90,18 @@ public:
         Head = Tail = NULL;
         Size = 0;
     }
-
+/**
+  * Public void: Push
+  * 
+  * Description:
+  *      Add a certain values on to the list
+  * 
+  * Params:
+  *      Integer named val
+  * 
+  * Returns:
+  *      NULL
+  */
     void Push(int val) {
         // allocate new memory and init node
         Node *Temp = new Node(val);
@@ -103,7 +114,18 @@ public:
         }
         Size++;
     }
-
+/**
+  * Public void: Inseert
+  * 
+  * Description:
+  *      Insert a value in a specific spot
+  * 
+  * Params:
+  *     Integer named val
+  * 
+  * Returns:
+  *      NULL
+  */
     void Insert(int val) {
         // allocate new memory and init node
         Node *Temp = new Node(val);
@@ -117,11 +139,33 @@ public:
         }
         Size++;
     }
-
+/**
+  * Public void: PrintTail
+  * 
+  * Description:
+  *      Print out the value pointed to by the tail
+  * 
+  * Params:
+  *      NULL
+  * 
+  * Returns:
+  *      NULL
+  */
     void PrintTail() {
         cout << Tail->x << endl;
     }
-
+/**
+  * Public string Pint
+  * 
+  * Description:
+  *      Prints out the contents of the list
+  * 
+  * Params:
+  *      NULL
+  * 
+  * Returns:
+  *      The fully printed out list
+  */
     string Print() {
         Node *Temp = Head;
         string list;
@@ -134,12 +178,34 @@ public:
         return list;
     }
 
-    // not implemented
+/**
+  * Public int Pop
+  * 
+  * Description:
+  *      Remove an item form the stack 
+  * 
+  * Params:
+  *      NULL
+  * 
+  * Returns:
+  *      integer 0
+  */
     int Pop() {
         Size--;
         return 0; //
     }
-
+/**
+  * Public List Operator+
+  * 
+  * Description:
+  *      To minimize the amount of things in the list
+  * 
+  * Params:
+  *      Constant reference to the right hand side
+  * 
+  * Returns:
+  *      An object of the structure type list
+  */
     List operator+(const List &Rhs) {
         // Create a new list that will contain both when done
         List NewList;
@@ -168,6 +234,18 @@ public:
 
     // Implementation of [] operator.  This function returns an
     // int value as if the list were an array.
+/**
+  * Public int operator[]
+  * 
+  * Description:
+  *      Checking the bounds of the index to make sure it stays in line
+  * 
+  * Params:
+  *      Integer named index
+  * 
+  * Returns:
+  *      Integer node pointing to x 
+  */
     int operator[](int index) {
         Node *Temp = Head;
 
