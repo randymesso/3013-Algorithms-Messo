@@ -336,6 +336,9 @@ outfile << "Max Stack Size " << Max_Size <<endl;
 outfile << "End Stack Size " << Ending_Size << endl;
 outfile << "Stack Resized " << stack.count <<" Times\n";
 outfile << "########################################################\n";
+
+//Close files
+infile.close();
 outfile.close();
 return 0;
 }
