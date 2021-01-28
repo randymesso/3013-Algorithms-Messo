@@ -109,22 +109,6 @@ bool Full()
   return (top >= size-1);
 }
 
-/**
-  * Public bool: TooSmall
-  * 
-  * Description:
-  *      Stack too small?
-  * 
-  * Params:
-  *      NULL
-  * 
-  * Returns:
-  *      [bool] true = full
-  */
-bool TooSmall()
-{
-  return (size > 10 && top <= size * 0.15);
-}
 
 /**
   * Public int: Peek
@@ -168,6 +152,24 @@ void Pop()
   }
   CheckResize();
 }
+
+/**
+  * Public bool: TooSmall
+  * 
+  * Description:
+  *      Checks to see if the stack is too small
+  * 
+  * Params:
+  *      NULL
+  * 
+  * Returns:
+  *      bool   : If the stack is too small then it will return true
+  */
+bool TooSmall()
+{
+  return (size > 10 && top <= size * 0.15);
+}
+
 
 /**
   * Public void: Print
